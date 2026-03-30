@@ -11,6 +11,7 @@
     <meta name="robots" content="index, follow">
 
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
       <!-- CSS principal da página -->
   <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portifólio da Lívia</title>
@@ -22,7 +23,7 @@
     <div class="menu-content">
     
       <!-- Título do Cabeçalho -->
-      <a href="index.html" id="titulo">&lt;livmachado /&gt;</a>
+      <a href="index.html" id="titulo" class="logo">&lt;livmachado /&gt;</a>
 
       <!-- Menu de Navegação -->
       <nav>
@@ -39,12 +40,13 @@
     <!-- Seção Principal da página -->
   <main>
 
+
     <!-- Seção Hero -->
     <section id="hero" class="section-container hero-container">
       
       <!-- Boas Vindas -->
       <article class="hero-content">
-        <span class="hero-fade">👋 Olá, eu sou a Lívia</span>
+        <span class="hero-fade">✨ Olá, eu sou a Lívia</span>
         <h1>Desenvolvedora Full Stack</h1>
         <p>Transformo ideias em, 
            código e crio experiências digitais incríveis.</p>
@@ -131,43 +133,7 @@
       <div class="swiper projects-swiper">
         <div class="swiper-wrapper">
 
-          <div class="swiper-slide">
-
-            <article class="project-card">
-
-              <!-- Ícone da Tecnologia padrão do projeto -->
-              <figure class="project-image">
-                <img src="./assets/icons/languages/github.svg"
-                     alt="Ícone do GitHub"
-                >
-              </figure>
-
-              <!-- Conteúdo do Projeto -->
-              <div class="project-content">
-
-                <h3>Projeto GitHub</h3>
-                <p>Projeto desenvolvido no GitHub</p>
-
-                <!-- Tags do Projeto -->
-                <div class="project-tags">
-                  <span class="tag">GitHub</span>
-                </div>
-
-                <!-- Links do Projeto -->
-                <div class="project-buttons">
-                  <a href="#" target="_blank" class="botao botao-sm">
-                    GitHub
-                  </a>
-                  <a href="#" target="_blank" class="botao-outline botao-sm">
-                    Deploy
-                  </a>
-                </div>
-
-              </div>
-
-            </article>
-
-          </div>
+          
 
         </div>
 
@@ -205,17 +171,15 @@
             >
           </a>
 
-           <a href="#" target="_blank" class="social-icon" aria-label="Instagram">
-            <img src="./assets/icons/social/instagram.svg"
-                 alt="Link para o Instagram"
-            >
-          </a>
         </div>
 
       </article>
 
       <!-- Formulário de Contato -->
-      <form id="formulario">
+      <form id="formulario" action="https://formsubmit.co/3297e354cd75968740872847bfa4620c" method="POST">
+
+        <input type="hidden" name="_next" value="http://localhost:5500/success.html">
+        <input type="hidden" name="_captcha" value="false">
 
         <label for="nome">Nome</label>
         <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
@@ -243,11 +207,17 @@
     <!-- Rodapé da página -->
     <footer >
       <p>Lívia Machado Campos © 2026 All Rights Reserved.</p>
-      <a href="#presentation">
+      <a href="#hero">
         <img src="./assets/img/Arrow.svg" alt="Seta" />
         <p>Voltar ao topo</p>
       </a>
     </footer>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script JavaScript principal da página -->
+    <script src="./assets/js/script.js"></script>
     
 </body>
 </html>
