@@ -106,7 +106,7 @@ O site será aberto no navegador e todas as alterações poderão ser visualizad
  
 Este site está disponível publicamente através do **GitHub Pages**. Você pode acessar a versão online pelo link abaixo:
  
-🔗 https://seu-usuario.github.io/seu-repositorio
+🔗 https://livmachado.github.io/portfolio/
  
 ------
  
