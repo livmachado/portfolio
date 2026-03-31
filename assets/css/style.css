@@ -837,6 +837,9 @@ footer{
     text-align: center;
   }
   
+   .hero-content{
+    align-items: center
+   }
 
   .hero-content,
   .hero-image {
@@ -990,6 +993,16 @@ footer{
   .success-icon img {
     width: 5rem;
     height: 5rem;
+  }
+
+  footer{
+    font-size: var(--text-sm);
+    align-items: center;
+  }
+
+  footer img {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 

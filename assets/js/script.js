@@ -49,7 +49,7 @@ async function getAboutGitHub() {
 		</p>
 
 		<p>
-		Atualmente, estou me aprofundando minhas softs e hards skills por meio do <strong>bootcamp da Generation</strong>, onde venho desenvolvendo projetos práticos.
+		Atualmente, estou aprofundando minhas softs e hards skills por meio do <strong>bootcamp da Generation</strong>, onde venho desenvolvendo projetos práticos.
 		</p>
 
 		<p>
