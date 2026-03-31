@@ -87,6 +87,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: clamp(14px, 1.2vw, 16px);
 }
 
 body {
@@ -835,10 +836,11 @@ footer{
     min-height: 60vh;
     text-align: center;
   }
+  
 
   .hero-content,
   .hero-image {
-    width: 90%;
+    width: 80%;
   }
 
   .hero-image img {
@@ -912,6 +914,7 @@ footer{
     min-height: 30rem;
     max-height: 30rem;
     max-width: 100%;
+    
   }
 
   .project-content {
@@ -933,7 +936,6 @@ footer{
     justify-content: center;
     align-items: stretch;
     height: auto;
-    opacity: 0.5;
     transition: 0.3s;
   }
 
@@ -943,12 +945,15 @@ footer{
   }
 
   /* Contact */
+
+
   .contact-container {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
-    width: 90%;
-    margin: 0 var(--spacing-2xl);
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    justify-content: space-evenly;
   }
+  
 
   .contact-info {
     border-right: none;
@@ -958,6 +963,7 @@ footer{
 
   form {
     grid-template-columns: 1fr;
+    font-size: var(--text-xl);
   }
 
   .field.full,
@@ -1083,6 +1089,10 @@ footer{
     gap: var(--spacing-lg);
     width: 100%;
     margin: 0 auto;
+  }
+
+  .contact-container h2 span {
+      font-size: var(--text-lg);
   }
 
   .contact-info,
