@@ -36,18 +36,25 @@ async function getAboutGitHub() {
       <article class="about-content">
 
         <h2>Sobre mim</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Natus minus perspiciatis 
-          reprehenderit error voluptatibus labore 
-          assumenda doloremque quibusdam sequi? 
-          Distinctio autem sed laudantium nostrum 
-          reprehenderit eligendi animi adipisci 
-          a neque.</p>
-        <p>Mussum Ipsum, cacilds vidis litro abertis. 
-          Per aumento de cachacis, eu reclamis. 
-          Suco de cevadiss deixa as pessoas mais interessantis. 
-          Quem manda na minha terra sou euzis! 
-          Quem num gosta di mé, boa gentis num é.</p>
+		<p>
+		Olá! Eu sou Lívia, 
+		<strong>desenvolvedora Full Stack
+		com foco em JavaScript</strong>.
+		</p>
+
+		<p>
+		Comecei com Python na faculdade e tive 
+		minha primeira experiência prática em uma Empresa Júnior, 
+		desenvolvendo uma plataforma com <strong>React</strong>, <strong>Node.js</strong> e <strong>TypeScript</strong>.
+		</p>
+
+		<p>
+		Atualmente, estou me aprofundando minhas softs e hards skills por meio do <strong>bootcamp da Generation</strong>, onde venho desenvolvendo projetos práticos.
+		</p>
+
+		<p>
+		Venha ver meus projetos no Github ou baixe meu curriculo para maiores informações. 
+		</p>
 
         <!-- Links (GitHub + Curriculo) e Dados do GitHub -->
         <div class="about-buttons-data">
@@ -55,7 +62,7 @@ async function getAboutGitHub() {
           <!-- Links -->
           <div class="buttons-container">
             <a href="${perfil.html_url}" target="_blank" class="botao">GitHub</a>
-            <a href="#" target="_blank" class="botao-outline">Currículo</a>
+            <a href="./assets/docs/Livia_Campos_Dev.pdf" target="_blank" class="botao-outline" dowload>Currículo</a>
           </div>
 
           <!-- Dados - GitHub -->
@@ -260,8 +267,8 @@ function iniciarSwiper() {
 		slidesOffsetAfter: 0,
 	})
 }
-
-formulario.addEventListener('submit', function (event) {
+	if (formulario) {
+	formulario.addEventListener('submit', function (event) {
 	event.preventDefault()
 
 	document
@@ -316,7 +323,88 @@ formulario.addEventListener('submit', function (event) {
 
 		formulario.submit()
 	}
-})
+	})
+}
+
+tsParticles.load("tsparticles", {
+  fullScreen: { enable: false },
+
+  background: {
+    color: "transparent"
+  },
+
+  particles: {
+    number: {
+      value: 100,
+      density: { enable: true, area: 800 }
+    },
+
+    color: {
+      value: [
+        "#6b36c8",
+        "#9460db",
+        "#38bdf8",
+        "#22d3ee",
+        "#ffffff"
+      ]
+    },
+
+    shape: {
+      type: "circle"
+    },
+
+    opacity: {
+      value: { min: 0.2, max: 0.8 }
+    },
+
+    size: {
+      value: { min: 1, max: 3 }
+    },
+
+    links: {
+      enable: true,
+      distance: 140,
+      color: "#9460db",
+      opacity: 0.2,
+      width: 1
+    },
+
+    move: {
+      enable: true,
+      speed: 0.8,
+      direction: "none",
+      outModes: { default: "out" }
+    }
+  },
+
+  interactivity: {
+    events: {
+      onHover: {
+        enable: true,
+        mode: "grab" // 👈 suave e elegante
+      },
+      onClick: {
+        enable: true,
+        mode: "push"
+      }
+    },
+
+    modes: {
+      grab: {
+        distance: 180,
+        links: {
+          opacity: 0.6
+        }
+      },
+
+      push: {
+        quantity: 3
+      }
+    }
+  },
+
+  detectRetina: true
+});
 
 // executar a função getAboutGitHub
 getAboutGitHub()
